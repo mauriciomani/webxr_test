@@ -48,9 +48,9 @@ function init() {
     //    ballGroup.quaternion.setFromRotationMatrix( controller.matrixWorld );
     //}
 
-	controller = renderer.xr.getController( 0 );
+	//controller = renderer.xr.getController( 0 );
 	//controller.addEventListener( 'select', onSelect );
-	scene.add( controller );
+	//scene.add( controller );
 
 	window.addEventListener( 'resize', onWindowResize );
 	}
