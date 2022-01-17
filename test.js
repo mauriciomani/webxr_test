@@ -38,6 +38,10 @@ function init() {
 	const ballMaterial = new THREE.MeshStandardMaterial( { color: 0xdddddd} );
 	const ballMesh = new THREE.Mesh( ballGeometry, ballMaterial );
 	ballMesh.position.set( 0, 0, -2 );
+	const ballGeometry = new THREE.SphereBufferGeometry( 0.175, 32, 32 );
+	const ballMaterial = new THREE.MeshStandardMaterial( { color: 0xdddddd} );
+	const ballMesh = new THREE.Mesh( ballGeometry, ballMaterial );
+	ballMesh.position.set( 0, 1, -2 );
 	scene.add( ballMesh );
     function onSelect() {
         ballGroup.position.set( 0, 0, - 2 ).applyMatrix4( controller.matrixWorld );
