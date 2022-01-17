@@ -41,7 +41,7 @@ function init() {
 	const ballGeometry1 = new THREE.SphereBufferGeometry( 0.175, 32, 32 );
 	const ballMaterial1 = new THREE.MeshStandardMaterial( { color: 0xdddddd} );
 	const ballMesh1 = new THREE.Mesh( ballGeometry1, ballMaterial1 );
-	ballMesh1.position.set( 0, 1, -2 );
+	ballMesh1.position.set( 0, 5, -2 );
 	scene.add( ballMesh );
     function onSelect() {
         ballGroup.position.set( 0, 0, - 2 ).applyMatrix4( controller.matrixWorld );
