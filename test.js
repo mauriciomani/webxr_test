@@ -43,13 +43,13 @@ function init() {
 	const ballMesh1 = new THREE.Mesh( ballGeometry1, ballMaterial1 );
 	ballMesh1.position.set( 0, 5, -2 );
 	scene.add( ballMesh );
-    function onSelect() {
-        ballGroup.position.set( 0, 0, - 2 ).applyMatrix4( controller.matrixWorld );
-        ballGroup.quaternion.setFromRotationMatrix( controller.matrixWorld );
-    }
+    //function onSelect() {
+    //    ballGroup.position.set( 0, 0, - 2 ).applyMatrix4( controller.matrixWorld );
+    //    ballGroup.quaternion.setFromRotationMatrix( controller.matrixWorld );
+    //}
 
 	controller = renderer.xr.getController( 0 );
-	controller.addEventListener( 'select', onSelect );
+	//controller.addEventListener( 'select', onSelect );
 	scene.add( controller );
 
 	window.addEventListener( 'resize', onWindowResize );
